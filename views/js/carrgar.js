@@ -29,14 +29,14 @@ async function carregarLivros() {
     const { books, user } = await response.json()
 
     // Exibe as informações do usuário (nome e foto de perfil)
-    document.getElementById('nomeUsuario').textContent =
-      user.username || 'Usuário'
+    const LogedIn = (document.getElementById('nomeUsuario').textContent =
+      user.username || 'Usuário')
     if (user.profilePicture) {
       document.getElementById(
         'fotoPerfil'
       ).src = `data:image/jpeg;base64,${user.profilePicture}`
     }
-
+    localStorage.setItem('nomeU', LogedIn)
     // Chama a função para exibir os livros
     exibirLivros(books)
   } catch (err) {

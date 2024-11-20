@@ -18,6 +18,7 @@ pub.addEventListener('submit', async function (event) {
     if (response.ok) {
       const data = await response.json()
       alert('Formulário enviado com sucesso!')
+      window.location.href = 'login.html'
       console.log(data)
     } else {
       alert('Erro ao enviar o formulário.')

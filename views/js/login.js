@@ -22,7 +22,7 @@ loginForm.addEventListener('submit', async event => {
       localStorage.setItem('email', email)
       console.log('Email armazenado:', localStorage.getItem('email'))
       alert('Você entrou!')
-      window.location.href = 'main.html'
+      window.location.href = 'index.html'
     } else {
       console.error('Erro no login:', response.statusText)
       alert('Erro ao enviar o formulário.')
