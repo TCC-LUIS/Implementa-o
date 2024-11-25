@@ -19,7 +19,7 @@ async function carregarLivros() {
     if (!response.ok) {
       if (response.status === 401) {
         alert('Sessão expirada. Por favor, faça login novamente.')
-        window.location.href = '/login.html'
+        window.location.href = 'login.html'
       } else {
         throw new Error('Erro ao carregar livros')
       }
@@ -120,8 +120,7 @@ function exibirLivros(books) {
       const imgURL = `data:image/jpeg;base64,${book.cover}`
       img.src = imgURL
       img.alt = book.title
-      img.style.maxWidth = '200px'
-      img.style.height = 'auto'
+      img.style.width = "200px";
       capaElemento.appendChild(img)
     } else {
       const semCapa = document.createElement('p')

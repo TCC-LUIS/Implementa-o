@@ -13,3 +13,7 @@ $('.fechar-popup').on("click", function(e) {
     $("#main").css("filter", "blur(0px)")
     $("#header").css("filter", "blur(0px)")
 })
+
+$("#fotoPerfil").on("click", function(e) {
+    location.href = "/gabrielJobs/Implementando/views/html/perfil.html"
+})

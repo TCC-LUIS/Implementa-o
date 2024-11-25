@@ -111,6 +111,13 @@ main {
 
 }
 
+.info-pagamento {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .img-livro {
     display: flex;
 }
@@ -127,6 +134,7 @@ main {
     height: 50%;
     justify-content: space-evenly;
     padding: 0 1%;
+    
 }
 
 .container-metodos-pagamento {
@@ -143,6 +151,7 @@ main {
 .pagamento {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .botao-pagamento {

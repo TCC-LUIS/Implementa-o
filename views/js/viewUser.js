@@ -3,7 +3,7 @@ async function verUser() {
 
   if (!token) {
     alert('Você precisa estar logado para acessar esta página.')
-    window.location.href = '/login.html'
+    window.location.href = 'login.html'
     return
   }
 
@@ -18,7 +18,7 @@ async function verUser() {
     if (!response.ok) {
       if (response.status === 401) {
         alert('Sessão expirada. Por favor, faça login novamente.')
-        window.location.href = '/login.html'
+        window.location.href = 'login.html'
       } else {
         throw new Error('Erro ao carregar usuário')
       }
@@ -119,7 +119,7 @@ function exibirLivros(books) {
       const imgURL = `data:image/jpeg;base64,${book.cover}`
       img.src = imgURL
       img.alt = book.title
-      img.style.maxWidth = '200px'
+      img.style.maxWidth = '170px'
       img.style.height = 'auto'
       capaElemento.appendChild(img)
     } else {

@@ -14,12 +14,7 @@
         <input type="text" placeholder="Pesquisar Livros" />
         <img src="../img/lupa.svg" alt="" width="25px" />
       </div>
-      <div class="login">
-        <a class="button" href="login.html">Entrar</a>
-        <a class="button" href="registrar.html">Registrar</a>
-      </div>
     </header>
-
     <main>
       <div class="container-conta">
         <div class="container-info-conta-1">
@@ -35,11 +30,11 @@
         </div>
         <div class="container-info-conta-2">
           <div class="info-bloco">
-            <button class="button">Livros Escritos</button>
-            <button class="button">Avaliaçõe</button>
-            <button class="button">Histórico de Compra</button>
-            <button class="button">Carrinho</button>
-            <button class="button">Sair da Conta</button>
+            <button class="button-perfil">Livros Escritos</button>
+            <button class="button-perfil">Avaliaçõe</button>
+            <button class="button-perfil" id="publicar">Publicar Livro</button>
+            <button class="button-perfil" id="carrinho">Carrinho</button>
+            <button class="button-perfil">Sair da Conta</button>
           </div>
           <div class="info-bloco-display">
             <div id="livrosContainer"></div>
@@ -47,7 +42,12 @@
         </div>
       </div>
     </main>
-
-    <script src="/views/js/viewUser.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+    <script src="/gabrielJobs/Implementando/views/js/perfil.js"></script>
+    <script src="/gabrielJobs/Implementando/views/js/viewUser.js"></script>
   </body>
 </html>
